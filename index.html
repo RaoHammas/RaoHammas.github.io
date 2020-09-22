@@ -74,8 +74,10 @@
                         </li>
                     </ul>
                     <div class="col-md-12">
-                        <button class="site-btn icon">Download Cv <i class="fa fa-download"
-                                aria-hidden="true"></i></button>
+                        <button id="resumeDownloadBtn" class="site-btn icon">
+                            <a style="color: black;" href="resume.pdf">Download Cv
+                                <i class="fa fa-download" aria-hidden="true"></i></a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -423,6 +425,12 @@
                     });
 
             });
+
+
+        const btnDownload = document.getElementById('resumeDownloadBtn');
+        btnDownload.addEventListener('click', function (event) {
+
+        });
     </script>
 </body>
 
